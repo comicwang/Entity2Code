@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="d:\program files\microsoft visual studio 12.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="12.0">
+ <Localized>
+  <String Key="Category">类别</String>
+  <String Key="Certainty">确定性</String>
+  <String Key="CollapseAll">全部折叠</String>
+  <String Key="CheckId">检查 ID</String>
+  <String Key="Error">错误</String>
+  <String Key="Errors">错误</String>
+  <String Key="ExpandAll">全部展开</String>
+  <String Key="Help">帮助</String>
+  <String Key="Line">行</String>
+  <String Key="Messages">消息</String>
+  <String Key="LocationNotStoredInPdb">[位置未存储在 Pdb 中]</String>
+  <String Key="Project">项目</String>
+  <String Key="Resolution">解析</String>
+  <String Key="Rule">规则</String>
+  <String Key="RuleFile">规则文件</String>
+  <String Key="RuleDescription">规则说明</String>
+  <String Key="Source">源</String>
+  <String Key="Status">状态</String>
+  <String Key="Target">目标</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">代码分析报告</String>
+ </Localized>
+ <Exceptions>
+  <Exception Keyword="CA0055" Kind="AssemblyLoad">
+   <Type>Microsoft.FxCop.Common.AssemblyLoadException</Type>
+   <ExceptionMessage>未能加载 I:\MyVisualProject\VS扩展\DDD数据库优先底层生成工具\Entity2CodeTool\bin\Release\Infoearth.Entity2CodeTool.dll。 读取模块“Infoearth.Entity2CodeTool”时遇到以下错误: 无法解析程序集引用:  EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089。</ExceptionMessage>
+   <InnerType>Microsoft.FxCop.Sdk.InvalidMetadataException</InnerType>
+   <InnerExceptionMessage>读取模块“Infoearth.Entity2CodeTool”时遇到以下错误: 无法解析程序集引用:  EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089。</InnerExceptionMessage>
+   <InnerStackTrace>   在 Microsoft.FxCop.Sdk.Reader.HandleError(ModuleNode mod, String errorMessage)
+   在 Microsoft.FxCop.Sdk.Reader.GetAssemblyFromReference(AssemblyReference assemblyReference)
+   在 Microsoft.FxCop.Sdk.AssemblyReference.get_Assembly()
+   在 Microsoft.FxCop.Sdk.Reader.GetTypeFromRef(Int32 i, Boolean expectStruct)
+   在 Microsoft.FxCop.Sdk.Reader.DecodeAndGetTypeDefOrRefOrSpec(Int32 codedIndex)
+   在 Microsoft.FxCop.Sdk.Reader.ParseTypeSignature(MemoryCursor sigReader, Boolean&amp; pinned, Boolean&amp; isTypeArgument)
+   在 Microsoft.FxCop.Sdk.Reader.GetFieldFromDef(Int32 i, TypeNode declaringType)
+   在 Microsoft.FxCop.Sdk.Reader.AddFieldsToType(TypeNode type, FieldRow[] fieldDefs, FieldPtrRow[] fieldPtrs, Int32 start, Int32 end)
+   在 Microsoft.FxCop.Sdk.Reader.GetTypeMembers(TypeNode type, Object handle)
+   在 Microsoft.FxCop.Sdk.TypeNode.get_Members()
+   在 Microsoft.FxCop.Engines.Introspection.BaseVisitor.VisitType(TypeNode type, TargetType target)
+   在 Microsoft.FxCop.Engines.Introspection.LoadVisitor.VisitType(TypeNode type, TargetType target)
+   在 Microsoft.FxCop.Engines.Introspection.BaseVisitor.VisitTypes(TypeNodeCollection types, TargetNamespaceDictionary targets)
+   在 Microsoft.FxCop.Engines.Introspection.LoadVisitor.VisitModule(ModuleNode module, TargetModule target)
+   在 Microsoft.FxCop.Engines.Introspection.BaseVisitor.VisitAssembly(AssemblyNode assembly, TargetFile target)
+   在 Microsoft.FxCop.Engines.Introspection.LoadVisitor.VisitAssembly(AssemblyNode assembly, TargetFile target)
+   在 Microsoft.FxCop.Engines.Introspection.LoadVisitor.Load(TargetFile target, Boolean buildTree, Boolean queueItems, AssemblyNode loadedAssembly)
+   在 Microsoft.FxCop.Engines.Introspection.IntrospectionAnalysisEngine.LoadTargets(TargetFile target)
+   在 Microsoft.FxCop.Common.EngineManager.LoadTargets(TargetFile target, Boolean resetCounts, String loadEngine)</InnerStackTrace>
+  </Exception>
+  <Exception Keyword="CA0052" Kind="Engine">
+   <Type>Microsoft.FxCop.Sdk.FxCopException</Type>
+   <ExceptionMessage>未选择任何目标。</ExceptionMessage>
+  </Exception>
+  <Exception Keyword="CA0058" Kind="Engine">
+   <Type>Microsoft.FxCop.Sdk.FxCopException</Type>
+   <ExceptionMessage>未能找到引用的程序集“EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089”。此程序集是分析所必需的且已由 I:\MyVisualProject\VS扩展\DDD数据库优先底层生成工具\Entity2CodeTool\bin\Release\Infoearth.Entity2CodeTool.dll 引用。</ExceptionMessage>
+  </Exception>
+ </Exceptions>
+</FxCopReport>

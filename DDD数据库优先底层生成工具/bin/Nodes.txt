@@ -1,0 +1,8 @@
+﻿Entity2Code工具是根据Visual Studio的ADO.Net模板来生产领域驱动程序的代码优先架构的，主要依赖于Visual Studio扩展程序中的DTE类来完成代码的生产。
+
+如果需要更改代码的模板，请记住扩展程序的安装路径找到代码中对应的模板，根据模板规则手动修改。每次修改之后需要运行程序ModelStrategy.exe,来更新代码模板
+
+重要的一点，安装完成之后找到安装目录，运行程序ModelStrategy.exe,来创建代码模板
+
+
+
