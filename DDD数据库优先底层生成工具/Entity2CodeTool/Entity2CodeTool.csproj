@@ -240,22 +240,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <EmbeddedResource Include="Dll\AutoMapper.dll" />
-    <EmbeddedResource Include="Dll\AutoMapper.Net4.dll" />
-    <EmbeddedResource Include="Dll\iTelluro.Explorer.Application.CodeFirst.Seedwork.dll" />
-    <EmbeddedResource Include="Dll\iTelluro.Explorer.Domain.CodeFirst.Seedwork.dll" />
-    <EmbeddedResource Include="Dll\iTelluro.Explorer.InfoUtility.dll" />
-    <EmbeddedResource Include="Dll\iTelluro.Explorer.Infrastruct.CodeFirst.Seedwork.dll" />
-    <EmbeddedResource Include="Dll\iTelluro.Explorer.Infrastructure.CrossCutting.dll" />
-    <EmbeddedResource Include="Dll\iTelluro.Explorer.Infrastructure.CrossCutting.NetFramework.dll" />
-    <EmbeddedResource Include="Dll\iTelluro.SSO.Common.dll" />
-    <EmbeddedResource Include="Dll\iTelluro.SSO.dll" />
-    <EmbeddedResource Include="Dll\iTelluro.SSO.WebServices.dll" />
-    <EmbeddedResource Include="Dll\iTelluro.SYS.Entity.dll" />
-    <EmbeddedResource Include="Dll\iTelluro.Utility.dll" />
-    <EmbeddedResource Include="Dll\log4net.dll" />
-    <EmbeddedResource Include="Dll\Microsoft.Practices.Unity.dll" />
-    <EmbeddedResource Include="Dll\EntityFramework.dll" />
     <Content Include="Refers\ExcuteCommand.txt" />
     <Compile Include="UI\FormModelView.cs">
       <SubType>Form</SubType>
@@ -269,7 +253,6 @@
     <Compile Include="UI\FormReferManager.Designer.cs">
       <DependentUpon>FormReferManager.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Code\DBContext.sem" />
     <Compile Include="Model\InfrastructType.cs" />
     <Compile Include="Model\StringCodeArgment.cs" />
     <Compile Include="Model\ModelManageArgment.cs" />
@@ -334,31 +317,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <EmbeddedResource Include="Code\Application.slm" />
-    <EmbeddedResource Include="Code\AttachDataSignBehavior.sem" />
-    <EmbeddedResource Include="Code\Container.sem" />
-    <EmbeddedResource Include="Code\Data2Obj.slm" />
-    <EmbeddedResource Include="Code\DbContextExtensions.sem" />
-    <EmbeddedResource Include="Code\Entities.sem" />
-    <EmbeddedResource Include="Code\IApplication.slm" />
-    <EmbeddedResource Include="Code\IRepository.slm" />
-    <EmbeddedResource Include="Code\IService.sem" />
-    <EmbeddedResource Include="Code\IService.slm" />
-    <EmbeddedResource Include="Code\Profile.sem" />
-    <EmbeddedResource Include="Code\Repository.slm" />
-    <EmbeddedResource Include="Code\Service.sem" />
-    <EmbeddedResource Include="Code\Service.slm" />
-    <EmbeddedResource Include="Code\ContextUnit.sem" />
-    <EmbeddedResource Include="Code\UnityInstanceProvider.sem" />
-    <EmbeddedResource Include="Code\UnityInstanceProviderServiceBehavior.sem" />
-    <EmbeddedResource Include="Code\WebConfig.sem">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Code\Container.slm" />
-    <EmbeddedResource Include="Code\Profile.slm" />
-    <EmbeddedResource Include="Code\DBContext.slm" />
-    <EmbeddedResource Include="Code\Entity.slm" />
-    <EmbeddedResource Include="Code\Map.slm" />
     <Content Include="Lisence.rtf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
