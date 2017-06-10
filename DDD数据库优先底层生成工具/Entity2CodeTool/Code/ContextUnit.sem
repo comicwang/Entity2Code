@@ -33,14 +33,14 @@ namespace $Infrastructure$
             where TEntity : class
         {
             //attach and set as unchanged
-            base.Entry<TEntity>(item).State = System.Data.EntityState.Unchanged;
+            base.Entry<TEntity>(item).State = EntityState.Unchanged;
         }
 
         public void SetModified<TEntity>(TEntity item)
             where TEntity : class
         {
             //this operation also attach item in object state manager
-            base.Entry<TEntity>(item).State = System.Data.EntityState.Modified;
+            base.Entry<TEntity>(item).State = EntityState.Modified;
         }
         public void ApplyCurrentValues<TEntity>(TEntity original, TEntity current)
             where TEntity : class

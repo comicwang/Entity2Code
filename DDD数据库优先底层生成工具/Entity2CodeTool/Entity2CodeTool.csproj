@@ -214,6 +214,7 @@
     <Compile Include="Logic\InfrastructLogic\Data2ObjLogic.cs" />
     <Compile Include="Logic\InfrastructLogic\DomainEntityLogic.cs" />
     <Compile Include="Logic\InfrastructLogic\InfrastructureLogic.cs" />
+    <Compile Include="Logic\UI\LoadProjectLogic.cs" />
     <Compile Include="Logic\UI\ModelManageLogic.cs" />
     <Compile Include="Logic\InfrastructLogic\ReferenceLogic.cs" />
     <Compile Include="Logic\InfrastructLogic\RepositoryLogic.cs" />

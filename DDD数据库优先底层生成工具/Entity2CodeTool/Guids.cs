@@ -14,6 +14,8 @@ namespace Infoearth.Entity2CodeTool
 
         public static readonly Guid guidEntity2CodeModelManager = new Guid("a7754210-46da-491a-80e3-6f9674689632");
 
+        public static readonly Guid guidEntity2CodeAddMethod = new Guid("d7757210-46da-481a-80e3-6f9674189632");
+
         public static readonly Guid guidEntity2CodeMain = new Guid("0f7fb20e-a0cc-47a9-893a-7f55a85d37ff");
 
         public static readonly Guid guidEntity2CodeReferManager = new Guid("85078341-f4cd-4ac7-8331-d3d9931bb2a5");

@@ -78,6 +78,10 @@ namespace Infoearth.Entity2CodeTool
                 MenuCommand menuItem = new MenuCommand(CreateCode, menuCommandID);
                 mcs.AddCommand(menuItem);
 
+                CommandID menuCommandID3 = new CommandID(GuidList.guidEntity2CodeAddMethod, (int)PkgCmdIDList.addMethodCommad);
+                MenuCommand menuItem3 = new MenuCommand(AddMethod, menuCommandID3);
+                mcs.AddCommand(menuItem3);
+
                 CommandID menuCommandID1 = new CommandID(GuidList.guidEntity2CodeModelManager, (int)PkgCmdIDList.modelManageCommand);
                 MenuCommand menuItem1 = new MenuCommand(ModelManage, menuCommandID1);
                 mcs.AddCommand(menuItem1);
@@ -86,6 +90,15 @@ namespace Infoearth.Entity2CodeTool
                 MenuCommand menuItem2 = new MenuCommand(ReferManage, menuCommandID2);
                 mcs.AddCommand(menuItem2);
             }
+        }
+
+        private void AddMethod(object sender, EventArgs e)
+        {
+            if (SolutionCommon.Dte == null)
+                SolutionCommon.Dte = (DTE)(GetService(typeof(DTE)));
+
+            FormAddMethod frmAdd = new FormAddMethod();
+            frmAdd.Show();
         }
 
         /// <summary>

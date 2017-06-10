@@ -78,8 +78,15 @@
         </Strings>
       </Button>
 
+      <Button guid="guidEntity2CodeAddMethod" id="guidEntity2CodeAddMethodIDManager" priority="0x0103" type="Button">
+        <Icon guid="guidImages" id="bmpPicArrows" />
+        <Strings>
+          <ButtonText>增加方法</ButtonText>
+        </Strings>
+      </Button>
+
       <Button guid="guidEntity2CodeModelManager" id="guidEntity2CodeModelIDManager" priority="0x0101" type="Button">
-        <Icon guid="guidImages" id="bmpPic2" />
+        <Icon guid="guidImages" id="bmpPicArrows" />
         <Strings>
           <ButtonText>模型管理</ButtonText>
         </Strings>
@@ -118,6 +125,9 @@
      <CommandPlacement guid="guidEntity2CodeReferManager" id="guidEntity2CodeReferIDManager" priority="0x0101">
       <Parent guid="guidEntity2CodeToolGroup" id="guidEntity2CodeToolIDGroup"/>
     </CommandPlacement>
+    <CommandPlacement guid="guidEntity2CodeAddMethod" id="guidEntity2CodeAddMethodIDManager" priority="0x0101">
+      <Parent guid="guidEntity2CodeToolGroup" id="guidEntity2CodeToolIDGroup"/>
+    </CommandPlacement>
     <CommandPlacement guid="guidEntity2CodeToolSetting" id="guidEntity2CodeToolIDSetting" priority="0x0101">
       <Parent guid="guidEntity2CodeToolGroup" id="guidEntity2CodeToolIDGroup"/>
     </CommandPlacement>
@@ -144,6 +154,10 @@
 
     <GuidSymbol name="guidEntity2CodeModelManager" value="{a7754210-46da-491a-80e3-6f9674689632}">
       <IDSymbol name="guidEntity2CodeModelIDManager" value="0x1400"/>
+    </GuidSymbol>
+
+    <GuidSymbol name="guidEntity2CodeAddMethod" value="{d7757210-46da-481a-80e3-6f9674189632}">
+      <IDSymbol name="guidEntity2CodeAddMethodIDManager" value="0x1700"/>
     </GuidSymbol>
 
     <GuidSymbol name="guidEntity2CodeReferManager" value="{85078341-f4cd-4ac7-8331-d3d9931bb2a5}">

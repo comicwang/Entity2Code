@@ -10,7 +10,6 @@ namespace Infoearth.Entity2CodeTool.Logic
 {
     public class ApplicationLogic
     {
-
         #region methods
 
         /// <summary>

@@ -12,5 +12,7 @@ namespace Infoearth.Entity2CodeTool
         public const uint referManageCommand = 0x1500;
 
         public const uint settingManageCommad = 0x1600;
+
+        public const uint addMethodCommad = 0x1700;
     };
 }
