@@ -33,6 +33,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnInsert = new System.Windows.Forms.Button();
             this.cmbReturn = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.RowNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,7 +48,6 @@
             this.txtMethod = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtCompany = new System.Windows.Forms.TextBox();
-            this.btnInsert = new System.Windows.Forms.Button();
             this.cmbReposi = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -95,6 +95,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(399, 49);
             this.panel1.TabIndex = 2;
+            // 
+            // btnInsert
+            // 
+            this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInsert.Location = new System.Drawing.Point(310, 14);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(75, 23);
+            this.btnInsert.TabIndex = 0;
+            this.btnInsert.Text = "插入";
+            this.btnInsert.UseVisualStyleBackColor = true;
             // 
             // cmbReturn
             // 
@@ -205,16 +215,6 @@
             this.txtCompany.Size = new System.Drawing.Size(136, 21);
             this.txtCompany.TabIndex = 1;
             // 
-            // btnInsert
-            // 
-            this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInsert.Location = new System.Drawing.Point(310, 14);
-            this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(75, 23);
-            this.btnInsert.TabIndex = 0;
-            this.btnInsert.Text = "插入";
-            this.btnInsert.UseVisualStyleBackColor = true;
-            // 
             // cmbReposi
             // 
             this.cmbReposi.FormattingEnabled = true;
@@ -249,6 +249,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormAddMethod";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "插入方法";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

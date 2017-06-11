@@ -179,6 +179,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Container\CodeContainer.cs" />
+    <Compile Include="Container\VarCsharp.cs" />
     <Compile Include="HelpsAndExtentions\AssemblyOprateHelp.cs" />
     <Compile Include="HelpsAndExtentions\DTEExtentions\CodeClassExtention.cs" />
     <Compile Include="HelpsAndExtentions\DTEExtentions\DTECommandExtention.cs" />
@@ -233,6 +234,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UI\FormSelectArg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormSelectArg.Designer.cs">
+      <DependentUpon>FormSelectArg.cs</DependentUpon>
+    </Compile>
     <Content Include="Resources\Package.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
@@ -285,6 +292,9 @@
     <Compile Include="UI\FormModelManager.Designer.cs">
       <DependentUpon>FormModelManager.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\FormSelectArg.resx">
+      <DependentUpon>FormSelectArg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Xml\KeyComment.xml" />
   </ItemGroup>
   <ItemGroup>
