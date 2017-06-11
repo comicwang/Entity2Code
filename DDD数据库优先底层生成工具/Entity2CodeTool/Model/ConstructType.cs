@@ -111,7 +111,15 @@ namespace Infoearth.Entity2CodeTool
         /// <summary>
         /// 上下文（用于代码优先）
         /// </summary>
-        DBContext
+        DBContext,
+
+        MethodApp,
+
+        MethodIApp,
+
+        MethodIServer,
+
+        MethodServer
 
         #endregion
 

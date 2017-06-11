@@ -31,7 +31,7 @@ namespace Infoearth.Entity2CodeTool.Logic.UI
                 if (prj.Name.ToLower().EndsWith("iapplication"))
                 {
 
-                   // SolutionCommon.ProjectName = 
+                    SolutionCommon.ProjectName = prjName.Split('.')[2];
                     SolutionCommon.IApplication = prjName;
                     ProjectContainer.IApplication = prj;
                     total++;
@@ -87,10 +87,18 @@ namespace Infoearth.Entity2CodeTool.Logic.UI
             string[] files = Directory.GetFiles(entityDir, "*.cs");
             if (null == files || files.Length == 0)
                 throw new Exception("Entity2Code DomainEntity ProjectItem is Null");
+            string entityDir1 = ProjectContainer.Data2Object.ToDirectory();
+            string[] files1 = Directory.GetFiles(entityDir1, "*.cs");
+            if (null == files1 || files1.Length == 0)
+                throw new Exception("Entity2Code DomainDTO ProjectItem is Null");
             foreach (string file in files)
             {
                 string entity = Path.GetFileNameWithoutExtension(file);
-                result.Add(new TemplateEntity() { Entity = entity + "Repository", Data2Obj = ModelNameConverter.GetData2Obj(entity) });
+
+                string data2obj = ModelNameConverter.GetData2Obj(entity);
+               data2obj= files1.Where(t => t.ToLower().Contains(data2obj.ToLower())).FirstOrDefault();
+               data2obj = Path.GetFileNameWithoutExtension(data2obj);
+                result.Add(new TemplateEntity() { Entity = entity, Data2Obj =data2obj});
             }
 
             return result;

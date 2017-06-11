@@ -79,7 +79,8 @@ namespace Infoearth.Entity2CodeTool
             {
                 foreach (ContainerModel kv in _models)
                 {
-
+                    if (kv.Value == null)
+                        kv.Value = string.Empty;
                     if (kv.Value.GetType() == typeof(string))
                         metaString = metaString.Replace(kv.Key.ToString(), kv.Value.ToString());
                     else if (kv.Value.GetType() == typeof(StringBuilder))
@@ -150,7 +151,7 @@ namespace Infoearth.Entity2CodeTool
         /// </summary>
         /// <param name="s1">关键字</param>
         /// <param name="s2">值</param>
-        public static void Regist(string s1, object s2, string comment)
+        public static void Regist(string s1, object s2, string comment = "")
         {
             if (_models != null)
             {

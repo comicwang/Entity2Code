@@ -28,18 +28,23 @@ namespace Infoearth.Entity2CodeTool.Converter
                 return string.Empty;
             string[] strs = entity.ToLower().Split('_');
 
-            if (strs.Length == 2)
+            for (int i = 0; i < strs.Length; i++)
             {
-                result = ToHeadUpper(strs[1]);
+                result += ToHeadUpper(strs[i]);
             }
-            else if (strs.Length == 1)
-            {
-                result = ToHeadUpper(entity);
-            }
-            else
-            {
-                result = ToHeadUpper(strs[1]) + ToHeadUpper(strs[2]);
-            }
+
+            //if (strs.Length == 2)
+            //{
+            //    result = ToHeadUpper(strs[1]);
+            //}
+            //else if (strs.Length == 1)
+            //{
+            //    result = ToHeadUpper(entity);
+            //}
+            //else
+            //{
+            //    result = ToHeadUpper(strs[1]) + ToHeadUpper(strs[2]);
+            //}
             return result;
         }
 

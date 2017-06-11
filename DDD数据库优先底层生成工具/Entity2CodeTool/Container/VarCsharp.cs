@@ -12,7 +12,7 @@ namespace Infoearth.Entity2CodeTool.Container
 
         private const string EnumTypeCons = "int,string,double,float,DateTime,char,long,byte,short,uint,ushort,ulong,sbyte,decimal,bool";
 
-        public List<string> AllTypes(bool reList)
+        public static List<string> AllTypes(bool reList)
         {
             List<string> result = EnumTypeCons.Split(',').ToList();
 

@@ -227,6 +227,8 @@
     <Compile Include="Model\ContainerModel.cs" />
     <Compile Include="Model\ContainerModels.cs" />
     <Compile Include="Model\LineShow.cs" />
+    <Compile Include="Model\MethodArgment.cs" />
+    <Compile Include="Model\MethodCommon.cs" />
     <Compile Include="Model\ReferManageArgment.cs" />
     <Compile Include="Model\XEntity.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EnvDTE;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
@@ -53,6 +54,31 @@ namespace Infoearth.Entity2CodeTool.Helps
                     result.AppendLine(reader.ReadLine());
                 }
             }
+            return result;
+        }
+
+        /// <summary>
+        /// 找出符合集合内容的关键字
+        /// </summary>
+        /// <param name="filePath"></param>
+        /// <param name="filters"></param>
+        /// <returns></returns>
+        public static List<string> ReadFileFilter(string filePath, List<TemplateEntity> filters)
+        {
+            List<string> result = new List<string>();
+            using (StreamReader reader = new StreamReader(filePath))
+            {
+                while (reader.Peek() != -1)
+                {
+                    string temp= reader.ReadLine();
+                    foreach (TemplateEntity item in filters)
+                    {
+                        if (!result.Contains(item.Data2Obj) && temp.Contains(item.Entity))
+                            result.Add(item.Data2Obj);
+                    }
+                }
+            }
+
             return result;
         }
 
@@ -136,6 +162,20 @@ namespace Infoearth.Entity2CodeTool.Helps
                 dtNew.WriteXml("KeyComment.xml".GetFileResource("Xml"));
                 ModelContainer.Remove(key);
             }
+        }
+
+        public static void WriteMethod(Project prj,string content ,TemplateEntity entity,string name)
+        {
+            string entityDir = prj.ToDirectory();
+            string filePath = Directory.GetFiles(entityDir,name + ".cs").FirstOrDefault();
+            if (null == filePath )
+                throw new Exception("ProjectItem not Find");
+
+            StringBuilder build = ReadFile(filePath);
+
+            build.Insert(build.Length - 10, content);
+
+            SaveFile(build.ToString(), filePath);
         }
     }
 }
